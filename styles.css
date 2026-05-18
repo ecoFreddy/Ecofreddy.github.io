@@ -353,3 +353,11 @@ footer{
   color: var(--muted);
   font-style: italic;
 }
+.research-wrap h2 {
+  font-size: 26px;
+}
+
+.research-wrap p {
+  font-size: 17px;
+  line-height: 1.85;
+}
