@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>CV — Fred Fu</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <h1 class="site-title"><a href="index.html">Fred Fu<br>Homepage</a></h1>
+
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a class="active" href="cv.html">CV</a>  
+      <a href="about.html">About</a> 
+      
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="wrap-narrow">
+      <p class="crumb">Curriculum Vitae</p>
+      <h1>CV</h1>
+    </div>
+  </section>
+
+  <section class="cv-section">
+    <div class="wrap-narrow">
+
+      <p>
+        You can view my curriculum vitae below or download the full PDF here:
+        <a href="CV_Fred_Fu.pdf" target="_blank" rel="noopener">Download CV</a>.
+      </p>
+
+      <p>
+        Last updated: <span>May 2026</span>.
+      </p>
+
+      <div class="cv-viewer">
+        <iframe src="CV_Fred_Fu.pdf" title="Fred Fu CV"></iframe>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Fred Fu. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

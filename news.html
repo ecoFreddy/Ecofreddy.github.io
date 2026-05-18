@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>News — Your Name</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <h1 class="site-title"><a href="index.html">Fred Fu<br>Homepage</a></h1>
+
+    <nav class="main-nav" aria-label="Main">
+      <a  href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a  href="cv.html">CV</a>  
+      <a  href="about.html">About</a> 
+      
+      <a class="active" href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="wrap-narrow">
+      <p class="crumb">Updates</p>
+      <h1>News</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap-narrow">
+      <ul class="news-list">
+        <li>
+          <time datetime="2026-05">May 2026</time>
+          <p>New paper accepted in <em>Journal Name</em> — a one-line summary of the finding.</p>
+        </li>
+        <li>
+          <time datetime="2026-03">Mar 2026</time>
+          <p>Gave an invited talk at [Conference / University]. Slides available on request.</p>
+        </li>
+        <li>
+          <time datetime="2025-12">Dec 2025</time>
+          <p>Awarded the [Fellowship / Grant Name] for the project on [topic].</p>
+        </li>
+        <li>
+          <time datetime="2025-09">Sep 2025</time>
+          <p>Started a new position as [Title] at [Institution]. Looking forward to the next chapter.</p>
+        </li>
+        <li>
+          <time datetime="2025-06">Jun 2025</time>
+          <p>Attended [Conference Name]; presented preliminary results from the [project] study.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Your Name. All rights reserved.</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
