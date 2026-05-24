@@ -33,7 +33,7 @@ body {
   color: var(--text);
   font-family: var(--font);
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.72;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -130,7 +130,7 @@ body {
 
 /* ---------- PAGE HEADER ---------- */
 .page-header {
-  padding: 56px 0 24px;
+  padding: 46px 0 20px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -151,13 +151,13 @@ body {
 
 /* ---------- BODY / TYPE ---------- */
 main section {
-  padding: 56px 0;
+  padding: 42px 0;
 }
 
 h2.section-title {
   font-size: 28px;
   font-weight: 700;
-  margin: 0 0 24px;
+  margin: 0 0 20px;
   letter-spacing: -0.005em;
   color: var(--text);
 }
@@ -169,7 +169,7 @@ h3 {
 }
 
 p {
-  margin: 0 0 18px;
+  margin: 0 0 16px;
   text-align: justify;
   hyphens: auto;
 }
@@ -193,6 +193,7 @@ a:hover {
 /* ---------- HOME INTRO ---------- */
 .home-intro {
   padding-top: 0;
+  padding-bottom: 8px;
 }
 
 .home-intro .wrap-narrow {
@@ -202,14 +203,35 @@ a:hover {
 .welcome-heading {
   font-size: 28px;
   font-weight: 700;
-  margin: 0 0 6px;
+  margin: 0 0 1px;
   color: var(--text);
   text-align: center;
 }
 
+/* Email line directly under homepage title */
+.home-email {
+  margin: 0 0 6px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--muted);
+}
+
+.home-email a {
+  color: var(--muted);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-email a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
 .homepage-photo {
   max-width: 400px;
-  margin: 28px auto 24px;
+  margin: 22px auto 14px;
 }
 
 .homepage-photo img {
@@ -219,9 +241,20 @@ a:hover {
   border-radius: 8px;
 }
 
+/* ---------- CAPTIONS ---------- */
+.workflow-caption,
+.homepage-caption {
+  margin: 6px 0 0;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--muted);
+  font-style: italic;
+}
+
 /* ---------- HOME WORKFLOW / HERO FIGURE ---------- */
 .hero {
-  padding: 24px 0 0;
+  padding: 20px 0 0;
   margin-bottom: 0;
 }
 
@@ -256,13 +289,13 @@ a:hover {
   text-align: center;
   font-size: 13px;
   color: var(--muted);
-  margin-top: 8px;
+  margin-top: 6px;
   font-style: italic;
 }
 
 .workflow-hero {
   max-width: 810px;
-  margin: 0 auto 28px;
+  margin: 16px auto 22px;
   padding: 0;
 }
 
@@ -279,37 +312,29 @@ a:hover {
   display: block;
 }
 
-.workflow-caption,
-.homepage-caption {
-  margin: 8px 0 0;
-  text-align: center;
-  font-size: 13px;
-  line-height: 1.5;
-  color: var(--muted);
-  font-style: italic;
-}
-
-/* This controls the gap between the workflow image and the next section */
+/* Gap between a hero block and the following section */
 .hero + section {
-  padding-top: 24px;
+  padding-top: 18px;
 }
 
 /* ---------- COMBINED HOMEPAGE RESEARCH SECTION ---------- */
 .research-combined {
-  padding-top: 10px;
+  padding-top: 4px;
 }
 
-/* This makes the Research title closer to the workflow image */
+/* For old layout if you still keep a standalone Research heading */
 .research-home-heading {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   color: var(--text);
 }
 
+/* Main Research Overview heading */
 .research-overview-heading {
-  margin-top: 24px;
+  margin-top: 0;
+  margin-bottom: 12px;
   text-align: center;
 }
 
@@ -371,7 +396,7 @@ a:hover {
 
 /* ---------- LONG-FORM RESEARCH PAGE ---------- */
 .research-banner-section {
-  padding: 36px 0 0;
+  padding: 30px 0 0;
 }
 
 .research-banner {
@@ -388,7 +413,7 @@ a:hover {
 }
 
 .research-page {
-  padding-top: 34px;
+  padding-top: 24px;
 }
 
 .research-wrap {
@@ -400,28 +425,28 @@ a:hover {
 .research-wrap h2 {
   font-size: 22px;
   font-weight: 700;
-  margin: 0 0 16px;
+  margin: 0 0 14px;
   letter-spacing: -0.005em;
 }
 
 .research-wrap h3 {
   font-size: 20px;
   font-weight: 500;
-  margin: 0 0 20px;
+  margin: 0 0 16px;
   line-height: 1.45;
 }
 
 .research-wrap p {
   font-size: 15px;
-  line-height: 1.8;
-  margin: 0 0 16px;
+  line-height: 1.78;
+  margin: 0 0 14px;
   text-align: justify;
 }
 
 .research-wrap hr {
   border: 0;
   border-top: 1px solid var(--line);
-  margin: 34px 0;
+  margin: 28px 0;
 }
 
 .research-topic {
@@ -429,25 +454,25 @@ a:hover {
 }
 
 .research-topic ul {
-  margin: 8px 0 0 22px;
+  margin: 6px 0 0 22px;
   padding: 0;
 }
 
 .research-topic li {
-  margin-bottom: 10px;
-  line-height: 1.75;
+  margin-bottom: 8px;
+  line-height: 1.68;
 }
 
 .project-role {
   color: var(--muted);
   font-size: 14.5px;
-  margin-top: -8px;
-  margin-bottom: 18px;
+  margin-top: -6px;
+  margin-bottom: 14px;
   text-align: left;
 }
 
 .topic-image {
-  margin: 20px 0 22px;
+  margin: 16px 0 18px;
 }
 
 .topic-image img {
@@ -483,14 +508,14 @@ a:hover {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
 }
 
 .news-list li {
   display: grid;
   grid-template-columns: 120px 1fr;
   gap: 18px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   border-bottom: 1px dashed var(--line);
 }
 
@@ -526,7 +551,7 @@ a:hover {
 
 .pub-list li {
   counter-increment: pub;
-  padding: 14px 0 14px 38px;
+  padding: 12px 0 12px 38px;
   position: relative;
   border-bottom: 1px solid var(--line);
 }
@@ -539,7 +564,7 @@ a:hover {
   content: counter(pub) ".";
   position: absolute;
   left: 0;
-  top: 14px;
+  top: 12px;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
   font-weight: 600;
@@ -557,7 +582,7 @@ a:hover {
 
 /* ---------- CV ---------- */
 .cv-section {
-  padding-top: 36px;
+  padding-top: 30px;
 }
 
 .cv-viewer {
@@ -567,7 +592,7 @@ a:hover {
   border-radius: 6px;
   overflow: hidden;
   background: #f7f7f7;
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 .cv-viewer iframe {
@@ -578,17 +603,17 @@ a:hover {
 
 /* ---------- ABOUT ---------- */
 .about-block {
-  margin-top: 34px;
+  margin-top: 28px;
 }
 
 .about-block h3 {
   font-size: 20px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .about-image {
   max-width: 640px;
-  margin: 14px 0 18px;
+  margin: 12px 0 16px;
 }
 
 .about-image img {
@@ -600,10 +625,10 @@ a:hover {
 
 .about-image-grid {
   max-width: 620px;
-  margin: 14px auto 18px;
+  margin: 12px auto 16px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 18px;
+  gap: 16px;
 }
 
 .about-image-grid img {
@@ -627,18 +652,18 @@ a:hover {
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 22px;
 }
 
 .contact-card {
   background: var(--soft);
   border: 1px solid var(--line);
   border-radius: 6px;
-  padding: 22px;
+  padding: 20px;
 }
 
 .contact-card p {
-  margin: 6px 0;
+  margin: 5px 0;
   text-align: left;
 }
 
@@ -650,29 +675,10 @@ a:hover {
 
 /* ---------- FOOTER ---------- */
 footer {
-  padding: 32px var(--pad) 56px;
+  padding: 28px var(--pad) 48px;
   color: var(--muted);
   font-size: 13px;
   text-align: center;
   border-top: 1px solid var(--line);
-  margin-top: 48px;
-}
-/* Reduce gap between intro photo caption and Research section */
-.home-intro {
-  padding-bottom: 10px;
-}
-
-.research-combined {
-  padding-top: 0;
-}
-
-.research-home-heading {
-  margin: 0 0 8px;
-}
-.home-email {
-  margin: 0 0 14px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--muted);
+  margin-top: 40px;
 }
