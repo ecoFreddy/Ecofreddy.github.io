@@ -669,3 +669,11 @@ footer {
 .research-home-heading {
   margin: 0 0 8px;
 }
+.home-email {
+  margin-top: -12px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+}
