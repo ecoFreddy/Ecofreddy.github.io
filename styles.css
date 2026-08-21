@@ -725,3 +725,14 @@ footer {
   border-top: 1px solid var(--line);
   margin-top: 40px;
 }
+.work-progress {
+  margin-top: 12px;
+}
+
+.research-wrap .work-progress-title {
+  margin: 0;
+}
+
+.work-progress-title + p {
+  margin-top: 0;
+}
